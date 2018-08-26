@@ -16,7 +16,7 @@ extras = {
 
 setup(
     name='webcraft',
-    version='0.1.4',
+    version='0.2.0',
     description=(
         'Async python framework for creating '
         'beautiful REST APIs using aiohttp.'
