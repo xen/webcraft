@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+uvloop = "*"
+aiosmtplib = "*"
+aiohttp = "*"
+asyncpgsa = "*"
+asyncpg = "~=0.15.0"
+psycopg2-binary = "*"
+sqlalchemy = "*"
+cchardet = "*"
+aiohttp-apispec = "*"
+aiohttp-swagger = "*"
+webcraft = "==0.1.4"
+"aiohttp-jinja2" = "*"
+
+[requires]
+python_version = "3.6"
