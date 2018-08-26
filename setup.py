@@ -7,10 +7,10 @@ requirements = ('aiohttp',)
 
 setup(
     name='webcraft',
-    version='0.1.0',
+    version='0.1.1',
     description=(
         'Async python framework for creating '
-        'beautiful REST APIs using `aiohttp`.'
+        'beautiful REST APIs using aiohttp.'
     ),
     long_description=long_description,
     long_description_content_type="text/markdown",

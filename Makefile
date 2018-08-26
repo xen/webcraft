@@ -1,3 +1,3 @@
 release:
-	`pipenv --py` setup.py sdist bdist_wheel && twine upload dist/*
-	rm -r dist
+	rm -rf dist
+	`pipenv --py` setup.py sdist bdist_wheel && pipenv run twine upload dist/*
