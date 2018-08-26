@@ -1,13 +1,22 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-requirements = ('aiohttp',)
+requirements = ('aiohttp', 'SQLAlchemy', )
+extras = {
+    'admin': [
+        'aiohttp_jinja2',
+        'aiohttp_session',
+        'WTForms',
+        'WTForms-Alchemy',
+        'WTForms-Components'
+    ]
+}
 
 setup(
     name='webcraft',
-    version='0.1.1',
+    version='0.1.4',
     description=(
         'Async python framework for creating '
         'beautiful REST APIs using aiohttp.'
@@ -18,9 +27,10 @@ setup(
     author='Mikhail Kashkin',
     author_email='m@xen.ru',
     license='BSD 3',
-    packages=['webcraft'],
+    packages=find_packages(),
     setup_requires=requirements,
     install_requires=requirements,
+    extras_require=extras,
     zip_safe=False,
     keywords=['webcraft', 'admin', 'rest',
               'framework', 'api', 'api-framework'],
