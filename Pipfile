@@ -8,4 +8,3 @@ aiohttp = "*"
 
 [dev-packages]
 twine = "*"
-
