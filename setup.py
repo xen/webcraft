@@ -10,13 +10,14 @@ extras = {
         'aiohttp_session',
         'WTForms',
         'WTForms-Alchemy',
-        'WTForms-Components'
+        'WTForms-Components',
+        'sqlalchemy-utils'
     ]
 }
 
 setup(
     name='webcraft',
-    version='0.2.0',
+    version='0.2.1',
     description=(
         'Async python framework for creating '
         'beautiful REST APIs using aiohttp.'
